@@ -34,9 +34,9 @@ app.get("/", function (req, res) {
 //Setting up MailChimp
 mailchimp.setConfig({
   //*****************************ENTER YOUR API KEY HERE******************************
-  apiKey: "ffacf48e002e66ad2769fe26dbf72261-us20",
+  apiKey: "",
   //*****************************ENTER YOUR API KEY PREFIX HERE i.e.THE SERVER******************************
-  server: "us20",
+  server: "",
 });
 
 //As soon as the sign in button is pressed execute this
@@ -46,7 +46,7 @@ app.post("/", function (req, res) {
   const lastName = req.body.lname;
   const email = req.body.email;
   //*****************************ENTER YOU LIST ID HERE******************************
-  const listId = "c8cf8802fb";
+  const listId = "";
   //Creating an object with the users data
   const subscribingUser = {
     firstName: firstName,
@@ -75,8 +75,4 @@ app.post("/", function (req, res) {
   run().catch((e) => res.sendFile(__dirname + "/failure.html"));
 });
 
-//API Key
-//ffacf48e002e66ad2769fe26dbf72261-us20
 
-//List Id
-//c8cf8802fb
