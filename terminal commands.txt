@@ -1,0 +1,26 @@
+To run server locally:
+npx nodemon server
+
+Install necessary packages:
+npm install @mailchimp/mailchimp_marketing
+
+Install heroku CLI:
+https://devcenter.heroku.com/articles/heroku-cli
+
+Create Procfile:
+touch Procfile
+
+Initialize git:
+git init
+
+Stage all files:
+git add .
+
+Create commit message:
+git commit -m "first commit"
+
+Connect to heroku (should ask if you wan to log in with browser):
+heroku create
+
+Push code to heroku servers:
+git push heroku main
